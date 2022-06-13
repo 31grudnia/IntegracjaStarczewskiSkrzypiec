@@ -1,0 +1,10 @@
+.graph1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.graph2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

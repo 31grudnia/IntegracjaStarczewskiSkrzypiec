@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #600047;
+}
+.btn-login {
+  border-color: rgb(22, 26, 85);
+  background-color: rgb(192, 201, 241);
+
+  border-radius: 15px;
+  width: 150px;
+  font-family: "Courier New", monospace;
+}
+.dropdown-toggle,
+.dropdown-item {
+  cursor: pointer;
+}
+.btn-login:hover {
+  background-color: rgb(74, 115, 226);
+}
+.nav-item {
+  margin-right: 40px;
+}

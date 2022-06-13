@@ -1,0 +1,64 @@
+<app-data-table></app-data-table>
+<div class="container border-top border-bottom mb-5">
+  <div class="display-4 d-flex justify-content-center mt-4">Dodaj rekord</div>
+  <form class="mt-5 d-flex justify-content-center" (ngSubmit)="addDane()">
+    <table class="form-group">
+      <tr>
+        <th><label for="kod">Artysta: </label></th>
+        <th>
+          <input
+            type="text form-control"
+            [(ngModel)]="model.artist"
+            id="artist"
+            name="artist"
+          />
+        </th>
+      </tr>
+      <tr>
+        <th><label for="nazwa" class="">Tytuł: </label></th>
+        <th>
+          <input
+            type="text form-control"
+            [(ngModel)]="model.title"
+            id="title"
+            name="title"
+          />
+        </th>
+      </tr>
+      <tr>
+        <th><label for="year" class="mr-3">Rok: </label></th>
+        <th>
+          <input
+            type="text form-control"
+            [(ngModel)]="model.year"
+            id="year"
+            name="year"
+          />
+        </th>
+      </tr>
+    </table>
+    <button class="btn btn-success ml-3 h-auto" type="submit">
+      Dodaj dane
+    </button>
+  </form>
+</div>
+<div class="display-4 d-flex justify-content-center mt-4 mb-5">Usuń rekord</div>
+<form
+  class="d-flex justify-content-center form-group border-bottom end"
+  (ngSubmit)="deleteDane()"
+>
+  <label for="id" class="mr-3">Id rekordu: </label>
+
+  <input type="text form-control" [(ngModel)]="idDelete" id="id" name="id" />
+
+  <button class="btn row btn-warning ml-3" type="submit">Usuń dane</button>
+</form>
+
+<!--<table>
+  <tr *ngFor="let dan of dane">
+    <td>
+      {{ dan.kod }} {{ dan.nazwa }} {{ dan.rodzajeTowaru }} {{ dan.rok }}
+      {{ dan.wartosc }} zł
+    </td>
+  </tr>
+</table>-->
