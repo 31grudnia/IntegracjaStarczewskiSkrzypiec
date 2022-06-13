@@ -9,7 +9,7 @@ cd api
 dotnet watch run
 ```
 
-**W drugim terminalu **
+**W drugim terminalu**
 ```
 cd client
 ng serve 
