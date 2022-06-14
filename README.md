@@ -4,7 +4,7 @@
 ```
 cd api
 ```
-**Udpalenie usługi .net (backend)**
+**Odpalenie usługi .net (backend)**
 ```
 dotnet watch run
 ```
